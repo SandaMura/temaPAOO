@@ -1,9 +1,14 @@
 #include "Car.hpp"
 #include "Bicycle.hpp"
+#include<iostream>
 
 int main() {
-    Car myCar("Toyota", 2023, "Camry");
-    Bicycle myBicycle("Giant", 2023, 26);
+    Car myCar("Toyota", 2023, "Camry", (char*)"Ana");
+    Bicycle myBicycle("Giant", 2023, 26, (char*)"Ion");
+
+    Bicycle myBicycleCopy=myBicycle;
+    Bicycle B2;
+    B2=myBicycle;
 
     std::cout << "Car Information:" << std::endl;
     myCar.displayInfo();

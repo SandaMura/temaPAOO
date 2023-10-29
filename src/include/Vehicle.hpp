@@ -8,21 +8,23 @@
 #define VEHICLE_HPP
 
 #include <string>
-
+using namespace std;
 class Vehicle {
 public:
-    Vehicle(const std::string& brand, int year);
+    Vehicle(const string& brand, int year, char* owner);
     Vehicle(const Vehicle& other); // Copy constructor
     void start();
     void stop();
     void displayInfo();
 // Destructor (empty, no dynamic memory to release)
-    ~Vehicle() {}
+    ~Vehicle();
 
 private:
-    std::string brand;
     int year;
-    std::string* dynamicData; // Dynamic member
+ 
+protected: 
+    char* owner; // Dynamic member
+    string brand;
 };
 
 #endif // VEHICLE_HPP

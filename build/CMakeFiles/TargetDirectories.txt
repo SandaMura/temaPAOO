@@ -1,3 +1,6 @@
 /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles/edit_cache.dir
 /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles/rebuild_cache.dir
 /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles/MyCppProject.dir
+/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/edit_cache.dir
+/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/rebuild_cache.dir
+/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/VehicleLibrary.dir

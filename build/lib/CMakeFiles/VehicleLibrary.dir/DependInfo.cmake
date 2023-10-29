@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/seed/Desktop/PAOO/Tema1/src/main.cpp" "/home/seed/Desktop/PAOO/Tema1/build/CMakeFiles/MyCppProject.dir/main.cpp.o"
+  "/home/seed/Desktop/PAOO/Tema1/src/lib/Bicycle.cpp" "/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o"
+  "/home/seed/Desktop/PAOO/Tema1/src/lib/Car.cpp" "/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.o"
+  "/home/seed/Desktop/PAOO/Tema1/src/lib/Vehicle.cpp" "/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +17,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/VehicleLibrary.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

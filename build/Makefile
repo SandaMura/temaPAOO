@@ -48,7 +48,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/seed/Desktop/PAOO/Tema1
+CMAKE_SOURCE_DIR = /home/seed/Desktop/PAOO/Tema1/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/seed/Desktop/PAOO/Tema1/build
@@ -123,50 +123,45 @@ MyCppProject/fast:
 	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/build
 .PHONY : MyCppProject/fast
 
-# target to build an object file
-src/BaseClass.o:
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/src/BaseClass.o
-.PHONY : src/BaseClass.o
+#=============================================================================
+# Target rules for targets named VehicleLibrary
 
-# target to preprocess a source file
-src/BaseClass.i:
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/src/BaseClass.i
-.PHONY : src/BaseClass.i
+# Build rule for target.
+VehicleLibrary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 VehicleLibrary
+.PHONY : VehicleLibrary
 
-# target to generate assembly for a file
-src/BaseClass.s:
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/src/BaseClass.s
-.PHONY : src/BaseClass.s
+# fast build rule for target.
+VehicleLibrary/fast:
+	$(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/build
+.PHONY : VehicleLibrary/fast
 
-# target to build an object file
-src/DerivedClass.o:
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/src/DerivedClass.o
-.PHONY : src/DerivedClass.o
+main.o: main.cpp.o
 
-# target to preprocess a source file
-src/DerivedClass.i:
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/src/DerivedClass.i
-.PHONY : src/DerivedClass.i
-
-# target to generate assembly for a file
-src/DerivedClass.s:
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/src/DerivedClass.s
-.PHONY : src/DerivedClass.s
+.PHONY : main.o
 
 # target to build an object file
-src/main.o:
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/src/main.o
-.PHONY : src/main.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
 
 # target to preprocess a source file
-src/main.i:
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/src/main.i
-.PHONY : src/main.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/main.s:
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/src/main.s
-.PHONY : src/main.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -177,15 +172,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyCppProject"
-	@echo "... src/BaseClass.o"
-	@echo "... src/BaseClass.i"
-	@echo "... src/BaseClass.s"
-	@echo "... src/DerivedClass.o"
-	@echo "... src/DerivedClass.i"
-	@echo "... src/DerivedClass.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... VehicleLibrary"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

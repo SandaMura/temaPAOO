@@ -20,11 +20,23 @@ string
 string
 -
 
-/home/seed/Desktop/PAOO/Tema1/src/main.cpp
-Car.hpp
-/home/seed/Desktop/PAOO/Tema1/src/Car.hpp
+/home/seed/Desktop/PAOO/Tema1/src/lib/Bicycle.cpp
 Bicycle.hpp
-/home/seed/Desktop/PAOO/Tema1/src/Bicycle.hpp
+/home/seed/Desktop/PAOO/Tema1/src/lib/Bicycle.hpp
 iostream
+-
+
+/home/seed/Desktop/PAOO/Tema1/src/lib/Car.cpp
+Car.hpp
+/home/seed/Desktop/PAOO/Tema1/src/lib/Car.hpp
+iostream
+-
+
+/home/seed/Desktop/PAOO/Tema1/src/lib/Vehicle.cpp
+Vehicle.hpp
+/home/seed/Desktop/PAOO/Tema1/src/lib/Vehicle.hpp
+iostream
+-
+string.h
 -
 
