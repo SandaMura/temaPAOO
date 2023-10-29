@@ -13,6 +13,7 @@ public:
     void drive();
 // Destructor (empty, no dynamic memory to release)
     ~Car();
+     Car& operator=(const Car& other);
 
 private:
     std::string model;

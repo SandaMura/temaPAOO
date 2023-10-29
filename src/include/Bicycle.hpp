@@ -10,6 +10,7 @@ public:
     void pedal();
 // Destructor (empty, no dynamic memory to release)
     ~Bicycle();
+    Bicycle& operator=(const Bicycle& other);
 
 private:
     int wheelSize;

@@ -18,6 +18,8 @@ public:
     void displayInfo();
 // Destructor (empty, no dynamic memory to release)
     ~Vehicle();
+//Assigment operator
+    Vehicle& operator=(const Vehicle& other);
 
 private:
     int year;

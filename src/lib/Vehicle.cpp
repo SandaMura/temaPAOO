@@ -14,6 +14,26 @@ Vehicle::Vehicle(const Vehicle& other) : brand(other.brand), year(other.year), o
     }
 }
 
+//Overload the assigment operaor
+Vehicle& Vehicle::operator=(const Vehicle& other) {
+    if (this != &other) { // Check for self-assignment
+        brand = other.brand;
+        year = other.year;
+
+        // Delete existing dynamicData
+        delete owner;
+
+        // Perform a deep copy of dynamicData (if it exists in 'other')
+        if (other.owner) {
+            owner = new char[strlen(other.owner)+1];
+            strcpy(owner, other.owner); // Deep copy
+        } else {
+            owner = nullptr;
+        }
+    }
+    return *this;
+}
+
 Vehicle::~Vehicle() {
     delete owner; // Release dynamic memory (if allocated)
 }
