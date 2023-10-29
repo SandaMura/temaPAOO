@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/seed/Desktop/PAOO/Tema1/src/BaseClass.cpp
+BaseClass.h
+/home/seed/Desktop/PAOO/Tema1/src/BaseClass.h
+iostream
+-
+
+/home/seed/Desktop/PAOO/Tema1/src/DerivedClass.cpp
+DerivedClass.h
+/home/seed/Desktop/PAOO/Tema1/src/DerivedClass.h
+iostream
+-
+
+/home/seed/Desktop/PAOO/Tema1/src/main.cpp
+BaseClass.h
+/home/seed/Desktop/PAOO/Tema1/src/BaseClass.h
+DerivedClass.h
+/home/seed/Desktop/PAOO/Tema1/src/DerivedClass.h
+
