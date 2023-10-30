@@ -1,17 +1,14 @@
-// BaseClass.h
+// BaseClass.h, Vehicle.h 
 
-#pragma once
+#pragma once //ca sa se include o singura data
 
 // Vehicle.hpp
 
-#ifndef VEHICLE_HPP
-#define VEHICLE_HPP
-
 #include <string>
-using namespace std;
+using namespace std; //sa folosesc metode din std fara numele intreg calificat
 class Vehicle {
 public:
-    Vehicle(const string& brand, int year, char* owner);
+    Vehicle(const string brand, int year, char* owner);
     Vehicle(const Vehicle& other); // Copy constructor
     void start();
     void stop();
@@ -29,6 +26,5 @@ protected:
     string brand;
 };
 
-#endif // VEHICLE_HPP
 
 
