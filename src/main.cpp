@@ -5,8 +5,9 @@
 int main() {
     Car myCar("Toyota", 2023, "Camry", (char*)"Ana");
     Bicycle myBicycle("Giant", 2023, 26, (char*)"Ion");
-
+    //Testez copy constructor
     Bicycle myBicycleCopy=myBicycle;
+
     Bicycle myB2("Giant2", 2023, 26, (char*)"Ion2");
     
 
@@ -33,7 +34,8 @@ int main() {
     myB2.start();
     myB2.pedal();
     myB2.stop();
-
+    
+    //Testez assigment operator
     myB2=myBicycle;
 
     std::cout << "\nB2 Information:" << std::endl;

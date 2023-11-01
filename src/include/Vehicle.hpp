@@ -13,7 +13,7 @@ public:
     void start();
     void stop();
     void displayInfo();
-// Destructor (empty, no dynamic memory to release)
+// Destructor
     ~Vehicle();
 //Assigment operator
     Vehicle& operator=(const Vehicle& other);

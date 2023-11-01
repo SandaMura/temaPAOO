@@ -9,7 +9,7 @@ Vehicle::Vehicle(const std::string brand, int year, char *owner) : brand(brand),
                strcpy(this->owner, owner);
 }
 
-// Copy constructor implementation
+// Copy constructor 
 //tratez si cazul in care owner este NUll
 Vehicle::Vehicle(const Vehicle& other) : brand(other.brand), year(other.year), owner(nullptr) {
     if (other.owner) {
@@ -18,17 +18,17 @@ Vehicle::Vehicle(const Vehicle& other) : brand(other.brand), year(other.year), o
     }
 }
 
-//Overload the assigment operaor
+//Overload/suprascriere la assigment operaor
 Vehicle& Vehicle::operator=(const Vehicle& other) {
-    if (this != &other) { // Check for self-assignment, de exp Car1=Car1
+    if (this != &other) { // Verifica sa nu fie self-assignment, de exp Car1=Car1
         brand = other.brand;
         year = other.year;
         
          std::cout << "Debug1"<<std::endl;
-        // Delete existing dynamicData
+        // sterge owner alocat dinamic
         delete owner;
           std::cout << "Debug2"<<std::endl;
-        // Perform a deep copy of dynamicData (if it exists in 'other')
+        // deep copy la dynamicData (daca exista in 'other')
         if (other.owner) {
             owner = new char[strlen(other.owner)+1];
             strcpy(owner, other.owner); // Deep copy
@@ -40,7 +40,7 @@ Vehicle& Vehicle::operator=(const Vehicle& other) {
 }
 
 Vehicle::~Vehicle() {
-    delete owner; // Release dynamic memory
+    delete owner; // elibereaza dynamic memory
 }
 
 void Vehicle::start() {
