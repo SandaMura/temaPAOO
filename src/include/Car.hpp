@@ -13,6 +13,9 @@ public:
 // Destructor 
     ~Car();
      Car& operator=(const Car& other);
+//Move constructor
+    Car(Car&& other);
+
 
 private:
     std::string model;

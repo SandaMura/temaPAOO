@@ -11,6 +11,8 @@ public:
 // Destructor 
     ~Bicycle();
     Bicycle& operator=(const Bicycle& other);
+//Move constructor
+    Bicycle(Bicycle&& other); 
 
 private:
     int wheelSize;

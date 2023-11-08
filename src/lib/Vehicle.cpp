@@ -1,19 +1,20 @@
-// Vehicle.cpp
-
 #include "Vehicle.hpp"
 #include <iostream>
-#include<string.h>
+#include <cstring> // Use <cstring> for C string operations
 
-Vehicle::Vehicle(const std::string brand, int year, char *owner) : brand(brand), year(year){
-	       this->owner=new char[strlen(owner)+1]; //aloc spatiu in mod dinamic
-               strcpy(this->owner, owner);
+using namespace std; // Add this using directive for the standard namespace
+
+// Vehicle constructor
+Vehicle::Vehicle(const string brand, int year, char *owner) : brand(brand), year(year) {
+    this->owner = new char[strlen(owner) + 1];
+    strcpy(this->owner, owner);
 }
 
-// Copy constructor 
-//tratez si cazul in care owner este NUll
+
+// Copy constructor
 Vehicle::Vehicle(const Vehicle& other) : brand(other.brand), year(other.year), owner(nullptr) {
     if (other.owner) {
-        owner = new char[strlen(other.owner)+1];
+        owner = new char[strlen(other.owner) + 1];
         strcpy(owner, other.owner); // Deep copy
     }
 }
@@ -39,20 +40,36 @@ Vehicle& Vehicle::operator=(const Vehicle& other) {
     return *this; //this e pointer, asa returnez referinta
 }
 
+// Suprascriere la Move Constructor
+// Move constructor
+Vehicle::Vehicle(Vehicle&& other) : brand(move(other.brand)), year(other.year), owner(nullptr) {
+    //am folosit direct move la brand. transfer ownership de la vechiul vehicul la noul
+    //la yera nu e nevoie sa fac transfer de ownership pentru ca e int, el se copiaza direct in noul obiect
+    //am initializat owner cu nullptr si acum ii aloc ownership-ul de la vechiul obiect
+    owner = other.owner;
+
+    // Resetez 'other'(obiectul din care mut) sa aibe valori nule/0, sa fie gol
+    other.year = 0;
+    other.owner = nullptr;
+}
+
 Vehicle::~Vehicle() {
     delete owner; // elibereaza dynamic memory
 }
 
 void Vehicle::start() {
-    std::cout << "Starting the " << brand << " vehicle." << std::endl;
+    cout << "Starting the " << brand << " vehicle." << endl;
 }
 
 void Vehicle::stop() {
-    std::cout << "Stopping the " << brand << " vehicle." << std::endl;
+    cout << "Stopping the " << brand << " vehicle." << endl;
 }
 
 void Vehicle::displayInfo() {
-    std::cout << "Brand: " << brand << ", Year: " << year << ", Owner:" << owner << std::endl;
+    cout << "Brand: " << brand << ", Year: " << year << ", Owner:" << owner << endl;
 }
 
+void Vehicle::setNewOwner(char* newOwner){
+    strcpy(owner, newOwner);
+}
 

@@ -2,8 +2,9 @@
 
 #include "Car.hpp"
 #include <iostream>
+using namespace std;
 
-Car::Car(const std::string& brand, int year, const std::string& model, char* owner)
+Car::Car(const string& brand, int year, const string& model, char* owner)
     : Vehicle(brand, year, owner), model(model) {}
 
 // Copy constructor 
@@ -21,12 +22,17 @@ Car& Car::operator=(const Car& other) {
     return *this;
 }
 
+// Move constructor for Car
+Car::Car(Car&& other) : Vehicle(std::move(other)), model(std::move(other.model)) {
+    //facut de Vehicle move constructor
+}
+
 Car::~Car() {
     // data dynamic (owner) este sters in destructorul clasei baza (vehicle)
 }
 
 void Car::drive() {
-    std::cout << "Driving the " << brand << " car." << std::endl;
+    cout << "Driving the " << brand << " car." << std::endl;
 }
 
 

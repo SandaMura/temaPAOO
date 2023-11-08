@@ -3,6 +3,8 @@
 #include "Bicycle.hpp"
 #include <iostream>
 
+using namespace std;
+
 Bicycle::Bicycle(const std::string& brand, int year, int wheelSize, char* owner)
     : Vehicle(brand, year, owner), wheelSize(wheelSize) {}
 
@@ -21,11 +23,18 @@ Bicycle& Bicycle::operator=(const Bicycle& other) {
     return *this;
 }
 
+// Move constructor for Bicycle
+Bicycle::Bicycle(Bicycle&& other) : Vehicle(std::move(other)), wheelSize(other.wheelSize) {
+    // facut de Vehicle move constructor
+    // Resetez field-ul unic biciletei
+    other.wheelSize = 0;
+}
+
 Bicycle::~Bicycle() {
     // data dynamic (owner) este sters in destructorul clasei baza (vehicle)
 }
 
 void Bicycle::pedal() {
-    std::cout << "Pedaling the " << brand << " bicycle." << std::endl;
+    cout << "Pedaling the " << brand << " bicycle." << std::endl;
 }
 

@@ -37,6 +37,6 @@ Vehicle.hpp
 /home/seed/Desktop/PAOO/Tema1/src/lib/Vehicle.hpp
 iostream
 -
-string.h
+cstring
 -
 
