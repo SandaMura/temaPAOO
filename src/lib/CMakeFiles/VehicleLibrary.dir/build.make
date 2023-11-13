@@ -129,11 +129,36 @@ lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o.provides: lib/CMakeFiles/Vehicle
 lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o.provides.build: lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o
 
 
+lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o: lib/CMakeFiles/VehicleLibrary.dir/flags.make
+lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o: lib/TemplateVehicle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seed/Desktop/PAOO/Tema1/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o"
+	cd /home/seed/Desktop/PAOO/Tema1/src/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o -c /home/seed/Desktop/PAOO/Tema1/src/lib/TemplateVehicle.cpp
+
+lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.i"
+	cd /home/seed/Desktop/PAOO/Tema1/src/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seed/Desktop/PAOO/Tema1/src/lib/TemplateVehicle.cpp > CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.i
+
+lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.s"
+	cd /home/seed/Desktop/PAOO/Tema1/src/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seed/Desktop/PAOO/Tema1/src/lib/TemplateVehicle.cpp -o CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.s
+
+lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o.requires:
+
+.PHONY : lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o.requires
+
+lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o.provides: lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o.requires
+	$(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o.provides.build
+.PHONY : lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o.provides
+
+lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o.provides.build: lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o
+
+
 # Object files for target VehicleLibrary
 VehicleLibrary_OBJECTS = \
 "CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.o" \
 "CMakeFiles/VehicleLibrary.dir/Car.cpp.o" \
-"CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o"
+"CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o" \
+"CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o"
 
 # External object files for target VehicleLibrary
 VehicleLibrary_EXTERNAL_OBJECTS =
@@ -141,9 +166,10 @@ VehicleLibrary_EXTERNAL_OBJECTS =
 lib/libVehicleLibrary.a: lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.o
 lib/libVehicleLibrary.a: lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.o
 lib/libVehicleLibrary.a: lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o
+lib/libVehicleLibrary.a: lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o
 lib/libVehicleLibrary.a: lib/CMakeFiles/VehicleLibrary.dir/build.make
 lib/libVehicleLibrary.a: lib/CMakeFiles/VehicleLibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seed/Desktop/PAOO/Tema1/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libVehicleLibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seed/Desktop/PAOO/Tema1/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libVehicleLibrary.a"
 	cd /home/seed/Desktop/PAOO/Tema1/src/lib && $(CMAKE_COMMAND) -P CMakeFiles/VehicleLibrary.dir/cmake_clean_target.cmake
 	cd /home/seed/Desktop/PAOO/Tema1/src/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VehicleLibrary.dir/link.txt --verbose=$(VERBOSE)
 
@@ -155,6 +181,7 @@ lib/CMakeFiles/VehicleLibrary.dir/build: lib/libVehicleLibrary.a
 lib/CMakeFiles/VehicleLibrary.dir/requires: lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.o.requires
 lib/CMakeFiles/VehicleLibrary.dir/requires: lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.o.requires
 lib/CMakeFiles/VehicleLibrary.dir/requires: lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o.requires
+lib/CMakeFiles/VehicleLibrary.dir/requires: lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o.requires
 
 .PHONY : lib/CMakeFiles/VehicleLibrary.dir/requires
 

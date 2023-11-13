@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/seed/Desktop/PAOO/Tema1/src/lib/Bicycle.cpp" "/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o"
   "/home/seed/Desktop/PAOO/Tema1/src/lib/Car.cpp" "/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.o"
+  "/home/seed/Desktop/PAOO/Tema1/src/lib/TemplateClass.cpp" "/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/VehicleLibrary.dir/TemplateClass.cpp.o"
   "/home/seed/Desktop/PAOO/Tema1/src/lib/Vehicle.cpp" "/home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

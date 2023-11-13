@@ -16,6 +16,10 @@ Vehicle.hpp
 string
 -
 
+/home/seed/Desktop/PAOO/Tema1/src/include/TemplateClass.hpp
+iostream
+-
+
 /home/seed/Desktop/PAOO/Tema1/src/include/Vehicle.hpp
 string
 -
@@ -31,6 +35,10 @@ Car.hpp
 /home/seed/Desktop/PAOO/Tema1/src/lib/Car.hpp
 iostream
 -
+
+/home/seed/Desktop/PAOO/Tema1/src/lib/TemplateClass.cpp
+TemplateClass.hpp
+/home/seed/Desktop/PAOO/Tema1/src/lib/TemplateClass.hpp
 
 /home/seed/Desktop/PAOO/Tema1/src/lib/Vehicle.cpp
 Vehicle.hpp

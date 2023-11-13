@@ -9,6 +9,9 @@ lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/i
 lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/include/Vehicle.hpp
 lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/lib/Car.cpp
 
+lib/CMakeFiles/VehicleLibrary.dir/TemplateClass.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/include/TemplateClass.hpp
+lib/CMakeFiles/VehicleLibrary.dir/TemplateClass.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/lib/TemplateClass.cpp
+
 lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/include/Vehicle.hpp
 lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/lib/Vehicle.cpp
 

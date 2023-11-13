@@ -10,6 +10,12 @@ Vehicle::Vehicle(const string brand, int year, char *owner) : brand(brand), year
     strcpy(this->owner, owner);
 }
 
+//getters
+
+//string Vehicle::getBrand(){ return this->brand;}
+//int Vehicle::getYear(){ return this->year;}
+//char* Vehicle::getOwner(){ return this->owner;}
+
 
 // Copy constructor
 Vehicle::Vehicle(const Vehicle& other) : brand(other.brand), year(other.year), owner(nullptr) {

@@ -8,6 +8,7 @@ public:
     Bicycle(const std::string& brand, int year, int wheelSize, char* owner);
     Bicycle(const Bicycle& other); // Copy constructor
     void pedal();
+    void start();
 // Destructor 
     ~Bicycle();
     Bicycle& operator=(const Bicycle& other);

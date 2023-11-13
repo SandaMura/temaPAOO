@@ -14,6 +14,9 @@ public:
     virtual void start();
     virtual void stop();
     virtual void displayInfo(); //getters
+  //  string getBrand() const;
+   // int getYear() const;
+   // char* getOwner() const;
 
    virtual void setNewOwner(char* owner); //setter
 // Destructor

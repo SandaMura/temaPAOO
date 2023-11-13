@@ -179,6 +179,33 @@ Car.cpp.s:
 	cd /home/seed/Desktop/PAOO/Tema1/src && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.s
 .PHONY : Car.cpp.s
 
+TemplateVehicle.o: TemplateVehicle.cpp.o
+
+.PHONY : TemplateVehicle.o
+
+# target to build an object file
+TemplateVehicle.cpp.o:
+	cd /home/seed/Desktop/PAOO/Tema1/src && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.o
+.PHONY : TemplateVehicle.cpp.o
+
+TemplateVehicle.i: TemplateVehicle.cpp.i
+
+.PHONY : TemplateVehicle.i
+
+# target to preprocess a source file
+TemplateVehicle.cpp.i:
+	cd /home/seed/Desktop/PAOO/Tema1/src && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.i
+.PHONY : TemplateVehicle.cpp.i
+
+TemplateVehicle.s: TemplateVehicle.cpp.s
+
+.PHONY : TemplateVehicle.s
+
+# target to generate assembly for a file
+TemplateVehicle.cpp.s:
+	cd /home/seed/Desktop/PAOO/Tema1/src && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/TemplateVehicle.cpp.s
+.PHONY : TemplateVehicle.cpp.s
+
 Vehicle.o: Vehicle.cpp.o
 
 .PHONY : Vehicle.o
@@ -221,6 +248,9 @@ help:
 	@echo "... Car.o"
 	@echo "... Car.i"
 	@echo "... Car.s"
+	@echo "... TemplateVehicle.o"
+	@echo "... TemplateVehicle.i"
+	@echo "... TemplateVehicle.s"
 	@echo "... Vehicle.o"
 	@echo "... Vehicle.i"
 	@echo "... Vehicle.s"

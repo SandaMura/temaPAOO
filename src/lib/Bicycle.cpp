@@ -38,3 +38,7 @@ void Bicycle::pedal() {
     cout << "Pedaling the " << brand << " bicycle." << std::endl;
 }
 
+void Bicycle::start() {
+    cout << "Starting the bicycle" << brand << " vehicle." << endl;
+}
+

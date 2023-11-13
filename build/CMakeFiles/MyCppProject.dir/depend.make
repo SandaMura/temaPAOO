@@ -3,6 +3,8 @@
 
 CMakeFiles/MyCppProject.dir/main.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/include/Bicycle.hpp
 CMakeFiles/MyCppProject.dir/main.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/include/Car.hpp
+CMakeFiles/MyCppProject.dir/main.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/include/TemplateClass.hpp
+CMakeFiles/MyCppProject.dir/main.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/include/TemplateVehicle.hpp
 CMakeFiles/MyCppProject.dir/main.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/include/Vehicle.hpp
 CMakeFiles/MyCppProject.dir/main.cpp.o: /home/seed/Desktop/PAOO/Tema1/src/main.cpp
 
