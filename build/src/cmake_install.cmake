@@ -1,4 +1,4 @@
-# Install script for directory: /home/seed/Desktop/PAOO/Tema1/src/lib
+# Install script for directory: /home/seed/Desktop/PAOO/Tema1/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -30,5 +30,11 @@ endif()
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/seed/Desktop/PAOO/Tema1/build/src/lib/cmake_install.cmake")
+
 endif()
 

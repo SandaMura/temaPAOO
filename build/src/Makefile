@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles /home/seed/Desktop/PAOO/Tema1/build/src/CMakeFiles/progress.marks
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named MyCppProject
+# Convenience name for target.
+src/CMakeFiles/MyCppProject.dir/rule:
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/MyCppProject.dir/rule
+.PHONY : src/CMakeFiles/MyCppProject.dir/rule
 
-# Build rule for target.
-MyCppProject: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MyCppProject
+# Convenience name for target.
+MyCppProject: src/CMakeFiles/MyCppProject.dir/rule
+
 .PHONY : MyCppProject
 
 # fast build rule for target.
 MyCppProject/fast:
-	$(MAKE) -f src/CMakeFiles/MyCppProject.dir/build.make src/CMakeFiles/MyCppProject.dir/build
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/CMakeFiles/MyCppProject.dir/build.make src/CMakeFiles/MyCppProject.dir/build
 .PHONY : MyCppProject/fast
 
-#=============================================================================
-# Target rules for targets named VehicleLibrary
+main.o: main.cpp.o
 
-# Build rule for target.
-VehicleLibrary: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 VehicleLibrary
-.PHONY : VehicleLibrary
+.PHONY : main.o
 
-# fast build rule for target.
-VehicleLibrary/fast:
-	$(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/build
-.PHONY : VehicleLibrary/fast
+# target to build an object file
+main.cpp.o:
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/CMakeFiles/MyCppProject.dir/build.make src/CMakeFiles/MyCppProject.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/CMakeFiles/MyCppProject.dir/build.make src/CMakeFiles/MyCppProject.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/CMakeFiles/MyCppProject.dir/build.make src/CMakeFiles/MyCppProject.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -145,7 +161,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyCppProject"
-	@echo "... VehicleLibrary"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -157,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

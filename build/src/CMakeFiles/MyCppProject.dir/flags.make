@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/seed/Desktop/PAOO/Tema1/src/include 
+CXX_INCLUDES = -I/home/seed/Desktop/PAOO/Tema1/include -I/home/seed/Desktop/PAOO/Tema1/src/include 
 

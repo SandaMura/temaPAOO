@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/seed/Desktop/PAOO/Tema1/src/include/Bicycle.hpp
+../src/include/Bicycle.hpp
 Vehicle.hpp
-/home/seed/Desktop/PAOO/Tema1/src/include/Vehicle.hpp
+../src/include/Vehicle.hpp
 
-/home/seed/Desktop/PAOO/Tema1/src/include/Car.hpp
+../src/include/Car.hpp
 Vehicle.hpp
-/home/seed/Desktop/PAOO/Tema1/src/include/Vehicle.hpp
+../src/include/Vehicle.hpp
 string
 -
 
-/home/seed/Desktop/PAOO/Tema1/src/include/TemplateClass.hpp
+../src/include/TemplateClass.hpp
 iostream
 -
 
-/home/seed/Desktop/PAOO/Tema1/src/include/TemplateVehicle.hpp
+../src/include/TemplateVehicle.hpp
 Vehicle.hpp
-/home/seed/Desktop/PAOO/Tema1/src/include/Vehicle.hpp
+../src/include/Vehicle.hpp
 
-/home/seed/Desktop/PAOO/Tema1/src/include/Vehicle.hpp
+../src/include/Vehicle.hpp
 string
 -
 

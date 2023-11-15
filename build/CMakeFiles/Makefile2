@@ -54,100 +54,120 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/seed/Desktop/PAOO/Tema1/src
+CMAKE_SOURCE_DIR = /home/seed/Desktop/PAOO/Tema1
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/seed/Desktop/PAOO/Tema1/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/MyCppProject.dir
+# Directory level rules for directory src
+
+# Convenience name for "all" pass in the directory.
+src/all: src/CMakeFiles/MyCppProject.dir/all
+src/all: src/lib/all
+
+.PHONY : src/all
+
+# Convenience name for "clean" pass in the directory.
+src/clean: src/CMakeFiles/MyCppProject.dir/clean
+src/clean: src/lib/clean
+
+.PHONY : src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/preinstall: src/lib/preinstall
+
+.PHONY : src/preinstall
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/MyCppProject.dir
 
 # All Build rule for target.
-CMakeFiles/MyCppProject.dir/all: lib/CMakeFiles/VehicleLibrary.dir/all
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/depend
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/build
+src/CMakeFiles/MyCppProject.dir/all: src/lib/CMakeFiles/VehicleLibrary.dir/all
+	$(MAKE) -f src/CMakeFiles/MyCppProject.dir/build.make src/CMakeFiles/MyCppProject.dir/depend
+	$(MAKE) -f src/CMakeFiles/MyCppProject.dir/build.make src/CMakeFiles/MyCppProject.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seed/Desktop/PAOO/Tema1/build/CMakeFiles --progress-num=1,2 "Built target MyCppProject"
-.PHONY : CMakeFiles/MyCppProject.dir/all
+.PHONY : src/CMakeFiles/MyCppProject.dir/all
 
 # Include target in all.
-all: CMakeFiles/MyCppProject.dir/all
+all: src/CMakeFiles/MyCppProject.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MyCppProject.dir/rule: cmake_check_build_system
+src/CMakeFiles/MyCppProject.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MyCppProject.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/MyCppProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles 0
-.PHONY : CMakeFiles/MyCppProject.dir/rule
+.PHONY : src/CMakeFiles/MyCppProject.dir/rule
 
 # Convenience name for target.
-MyCppProject: CMakeFiles/MyCppProject.dir/rule
+MyCppProject: src/CMakeFiles/MyCppProject.dir/rule
 
 .PHONY : MyCppProject
 
 # clean rule for target.
-CMakeFiles/MyCppProject.dir/clean:
-	$(MAKE) -f CMakeFiles/MyCppProject.dir/build.make CMakeFiles/MyCppProject.dir/clean
-.PHONY : CMakeFiles/MyCppProject.dir/clean
+src/CMakeFiles/MyCppProject.dir/clean:
+	$(MAKE) -f src/CMakeFiles/MyCppProject.dir/build.make src/CMakeFiles/MyCppProject.dir/clean
+.PHONY : src/CMakeFiles/MyCppProject.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/MyCppProject.dir/clean
+clean: src/CMakeFiles/MyCppProject.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory lib
+# Directory level rules for directory src/lib
 
 # Convenience name for "all" pass in the directory.
-lib/all: lib/CMakeFiles/VehicleLibrary.dir/all
+src/lib/all: src/lib/CMakeFiles/VehicleLibrary.dir/all
 
-.PHONY : lib/all
+.PHONY : src/lib/all
 
 # Convenience name for "clean" pass in the directory.
-lib/clean: lib/CMakeFiles/VehicleLibrary.dir/clean
+src/lib/clean: src/lib/CMakeFiles/VehicleLibrary.dir/clean
 
-.PHONY : lib/clean
+.PHONY : src/lib/clean
 
 # Convenience name for "preinstall" pass in the directory.
-lib/preinstall:
+src/lib/preinstall:
 
-.PHONY : lib/preinstall
+.PHONY : src/lib/preinstall
 
 #=============================================================================
-# Target rules for target lib/CMakeFiles/VehicleLibrary.dir
+# Target rules for target src/lib/CMakeFiles/VehicleLibrary.dir
 
 # All Build rule for target.
-lib/CMakeFiles/VehicleLibrary.dir/all:
-	$(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/depend
-	$(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/build
+src/lib/CMakeFiles/VehicleLibrary.dir/all:
+	$(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/depend
+	$(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seed/Desktop/PAOO/Tema1/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target VehicleLibrary"
-.PHONY : lib/CMakeFiles/VehicleLibrary.dir/all
+.PHONY : src/lib/CMakeFiles/VehicleLibrary.dir/all
 
 # Include target in all.
-all: lib/CMakeFiles/VehicleLibrary.dir/all
+all: src/lib/CMakeFiles/VehicleLibrary.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-lib/CMakeFiles/VehicleLibrary.dir/rule: cmake_check_build_system
+src/lib/CMakeFiles/VehicleLibrary.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/VehicleLibrary.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/lib/CMakeFiles/VehicleLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles 0
-.PHONY : lib/CMakeFiles/VehicleLibrary.dir/rule
+.PHONY : src/lib/CMakeFiles/VehicleLibrary.dir/rule
 
 # Convenience name for target.
-VehicleLibrary: lib/CMakeFiles/VehicleLibrary.dir/rule
+VehicleLibrary: src/lib/CMakeFiles/VehicleLibrary.dir/rule
 
 .PHONY : VehicleLibrary
 
 # clean rule for target.
-lib/CMakeFiles/VehicleLibrary.dir/clean:
-	$(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/clean
-.PHONY : lib/CMakeFiles/VehicleLibrary.dir/clean
+src/lib/CMakeFiles/VehicleLibrary.dir/clean:
+	$(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/clean
+.PHONY : src/lib/CMakeFiles/VehicleLibrary.dir/clean
 
 # clean rule for target.
-clean: lib/CMakeFiles/VehicleLibrary.dir/clean
+clean: src/lib/CMakeFiles/VehicleLibrary.dir/clean
 
 .PHONY : clean
 

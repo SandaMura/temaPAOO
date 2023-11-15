@@ -48,7 +48,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/seed/Desktop/PAOO/Tema1/src
+CMAKE_SOURCE_DIR = /home/seed/Desktop/PAOO/Tema1
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/seed/Desktop/PAOO/Tema1/build
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles /home/seed/Desktop/PAOO/Tema1/build/lib/CMakeFiles/progress.marks
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles /home/seed/Desktop/PAOO/Tema1/build/src/lib/CMakeFiles/progress.marks
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/seed/Desktop/PAOO/Tema1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,12 +97,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -111,18 +111,18 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-lib/CMakeFiles/VehicleLibrary.dir/rule:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/VehicleLibrary.dir/rule
-.PHONY : lib/CMakeFiles/VehicleLibrary.dir/rule
+src/lib/CMakeFiles/VehicleLibrary.dir/rule:
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib/CMakeFiles/VehicleLibrary.dir/rule
+.PHONY : src/lib/CMakeFiles/VehicleLibrary.dir/rule
 
 # Convenience name for target.
-VehicleLibrary: lib/CMakeFiles/VehicleLibrary.dir/rule
+VehicleLibrary: src/lib/CMakeFiles/VehicleLibrary.dir/rule
 
 .PHONY : VehicleLibrary
 
 # fast build rule for target.
 VehicleLibrary/fast:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/build
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/build
 .PHONY : VehicleLibrary/fast
 
 Bicycle.o: Bicycle.cpp.o
@@ -131,7 +131,7 @@ Bicycle.o: Bicycle.cpp.o
 
 # target to build an object file
 Bicycle.cpp.o:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.o
 .PHONY : Bicycle.cpp.o
 
 Bicycle.i: Bicycle.cpp.i
@@ -140,7 +140,7 @@ Bicycle.i: Bicycle.cpp.i
 
 # target to preprocess a source file
 Bicycle.cpp.i:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.i
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.i
 .PHONY : Bicycle.cpp.i
 
 Bicycle.s: Bicycle.cpp.s
@@ -149,7 +149,7 @@ Bicycle.s: Bicycle.cpp.s
 
 # target to generate assembly for a file
 Bicycle.cpp.s:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.s
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/Bicycle.cpp.s
 .PHONY : Bicycle.cpp.s
 
 Car.o: Car.cpp.o
@@ -158,7 +158,7 @@ Car.o: Car.cpp.o
 
 # target to build an object file
 Car.cpp.o:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.o
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.o
 .PHONY : Car.cpp.o
 
 Car.i: Car.cpp.i
@@ -167,7 +167,7 @@ Car.i: Car.cpp.i
 
 # target to preprocess a source file
 Car.cpp.i:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.i
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.i
 .PHONY : Car.cpp.i
 
 Car.s: Car.cpp.s
@@ -176,7 +176,7 @@ Car.s: Car.cpp.s
 
 # target to generate assembly for a file
 Car.cpp.s:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.s
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/Car.cpp.s
 .PHONY : Car.cpp.s
 
 TemplateClass.o: TemplateClass.cpp.o
@@ -185,7 +185,7 @@ TemplateClass.o: TemplateClass.cpp.o
 
 # target to build an object file
 TemplateClass.cpp.o:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/TemplateClass.cpp.o
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/TemplateClass.cpp.o
 .PHONY : TemplateClass.cpp.o
 
 TemplateClass.i: TemplateClass.cpp.i
@@ -194,7 +194,7 @@ TemplateClass.i: TemplateClass.cpp.i
 
 # target to preprocess a source file
 TemplateClass.cpp.i:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/TemplateClass.cpp.i
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/TemplateClass.cpp.i
 .PHONY : TemplateClass.cpp.i
 
 TemplateClass.s: TemplateClass.cpp.s
@@ -203,7 +203,7 @@ TemplateClass.s: TemplateClass.cpp.s
 
 # target to generate assembly for a file
 TemplateClass.cpp.s:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/TemplateClass.cpp.s
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/TemplateClass.cpp.s
 .PHONY : TemplateClass.cpp.s
 
 Vehicle.o: Vehicle.cpp.o
@@ -212,7 +212,7 @@ Vehicle.o: Vehicle.cpp.o
 
 # target to build an object file
 Vehicle.cpp.o:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.o
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.o
 .PHONY : Vehicle.cpp.o
 
 Vehicle.i: Vehicle.cpp.i
@@ -221,7 +221,7 @@ Vehicle.i: Vehicle.cpp.i
 
 # target to preprocess a source file
 Vehicle.cpp.i:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.i
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.i
 .PHONY : Vehicle.cpp.i
 
 Vehicle.s: Vehicle.cpp.s
@@ -230,7 +230,7 @@ Vehicle.s: Vehicle.cpp.s
 
 # target to generate assembly for a file
 Vehicle.cpp.s:
-	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f lib/CMakeFiles/VehicleLibrary.dir/build.make lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.s
+	cd /home/seed/Desktop/PAOO/Tema1/build && $(MAKE) -f src/lib/CMakeFiles/VehicleLibrary.dir/build.make src/lib/CMakeFiles/VehicleLibrary.dir/Vehicle.cpp.s
 .PHONY : Vehicle.cpp.s
 
 # Help Target

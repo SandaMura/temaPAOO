@@ -134,21 +134,6 @@ int main() {
         vehiclePtr->displayInfo();
     }
     
-
-    // Creating instances of Bicycle and Car
-   // Bicycle bicycle("BicycleTemplate", 2023, 26, (char*)"Ion");
-    //Car car("CarTemplate", 2023, "Camry", (char*)"Ana");
-
-    // Using TemplateVehicle with Bicycle
-    //TemplateVehicle<Bicycle> templateBicycle(bicycle);
-    //templateBicycle.start();
-    //templateBicycle.stop();
-
-    //Using TemplateVehicle with Car
-    //TemplateVehicle<Car> templateCar(car);
-    //templateCar.start();
-    //templateCar.stop();
-
     return 0;
 }
 
